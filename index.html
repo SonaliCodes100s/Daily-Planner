@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🌈 Todo List Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1><span>🌈</span> Todo List Project</h1>
+    <p>Organize your tasks with style!</p>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="✏️ Add a new task">
+      <input type="time" id="timeInput">
+      <button id="addBtn">Add ➕</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="all">All Tasks</button>
+      <button class="tab" data-tab="active">Active</button>
+      <button class="tab" data-tab="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+
+    <div class="stats">
+      <div><strong id="totalCount">0</strong> Total Tasks</div>
+      <div><strong id="completedCount">0</strong> Completed</div>
+      <div><strong id="remainingCount">0</strong> Remaining</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
